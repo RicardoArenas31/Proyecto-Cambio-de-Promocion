@@ -14,5 +14,6 @@
     <body>
         <h1>Aqui esta el inicio</h1>
         <a href="registrarPuntos.jsp">Registrar Puntos</a>
+        
     </body>
 </html>

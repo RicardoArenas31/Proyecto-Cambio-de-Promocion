@@ -28,7 +28,7 @@
                     sesion.setAttribute("user", email);
                     sesion.setAttribute("nivel", "2");
                     sesion.setAttribute("id_user", us.getIdUsuario());
-                    response.sendRedirect("registrarPuntos.jsp");
+                    response.sendRedirect("inicio.jsp");
                     break;
                 default:
                     String mensaje="<script language='javascript'>alert('Ingresa una contraseña y/o usuario correcto');</script>";

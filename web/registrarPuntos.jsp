@@ -131,7 +131,7 @@
                             <input type="submit" name="btnRegistrar" class="btn btn-primary width-100" value="Registrar">
                             <button class="btn btn-primary width-100"><a href="inicio.jsp" style="color:#FF0000; ">Cancelar</a></button>
                         </form>
-                        <small class="d-inline-block text-muted mt-5">Quieres ver tus Puntos? <a href="#">Click aquí</a></small>
+                        <small class="d-inline-block text-muted mt-5">Quieres ver tus Puntos? <a href="verPuntos.jsp">Click aquí</a></small>
                     </div>
                 </div>
             </div>

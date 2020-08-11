@@ -54,6 +54,30 @@ public class Puntos {
     }
     public int mostrarPuntos(){
         int puntosTot=0;
-        return puntosTot;
+                
+        final String SQL = "select sum(puntos) from registra where id_participante=?";
+        Conexion con = new Conexion();
+        con.obtenerConexion();
+        PreparedStatement pst=null;
+        ResultSet rs=null;
+        try {
+            pst= con.getConnection().prepareStatement(SQL);
+            pst.setInt(1,getIdParticipante());
+            rs =pst.executeQuery();
+            if (rs.next()) {
+                puntosTot=rs.getInt("sum");
+            }
+            
+            return puntosTot;
+            
+        }catch(Exception e){
+            System.err.print(e);
+            return puntosTot;
+        }
+    }
+    public static void main(String[] args) {
+        Puntos p = new Puntos();
+        p.setIdParticipante(2);
+        System.out.println(p.mostrarPuntos());
     }
 }
